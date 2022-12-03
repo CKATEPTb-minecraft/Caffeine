@@ -59,15 +59,15 @@ tasks {
     }
     build {
         // Uncomment next line if u need only embed, without shrink
-//        dependsOn(reobfJar, shadowJar)
+        dependsOn(reobfJar, shadowJar)
         // Comment next line if u need only embed, without shrink
-        dependsOn(reobfJar, "shrink")
+//        dependsOn(reobfJar, "shrink")
     }
     publish {
         // Uncomment next line if u need only embed
-//        dependsOn(reobfJar, shadowJar)
+        dependsOn(reobfJar, shadowJar)
         // Comment next line if u need only embed, without shrink
-        dependsOn(reobfJar, "shrink")
+//        dependsOn(reobfJar, "shrink")
     }
     withType<JavaCompile> {
         options.encoding = "UTF-8"
